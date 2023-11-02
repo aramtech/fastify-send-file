@@ -38,12 +38,6 @@ async function send_file_plugin(app) {
             reply.send(wrapper)
         })
 
-        wrapper.on('error', err => {
-            if (err.code === 'ENOENT') {
-                reply.callNotFound()
-            }
-        })
-
         stream.pipe(wrapper)
 
         return this
