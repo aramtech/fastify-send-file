@@ -1,0 +1,19 @@
+{
+  "name": "fastify-send-file",
+  "version": "1.0.0",
+  "description": "Plugin for serving files in fastify.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fastify",
+    "plugin",
+    "files",
+    "serving",
+    "streams"
+  ],
+  "author": "Aramtech",
+  "license": "UNLICENSED"
+}
