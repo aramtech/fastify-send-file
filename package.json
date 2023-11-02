@@ -15,5 +15,12 @@
     "streams"
   ],
   "author": "Aramtech",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "fastify": "^4.24.3",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.5.1"
+  }
 }
