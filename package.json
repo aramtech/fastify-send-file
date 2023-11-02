@@ -1,6 +1,6 @@
 {
   "name": "fastify-send-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for serving files in fastify.",
   "main": "index.js",
   "type": "module",

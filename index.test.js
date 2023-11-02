@@ -11,7 +11,7 @@ import { describe, test, expect, afterEach, beforeEach } from 'vitest'
 describe('plugin tests', () => {
     const test_dir_path = path.join(os.tmpdir(), 'fastify-send-file-tmp-dir')
     const create_file_path = name => path.join(test_dir_path, name)
-    
+
     const file_contents = `
         <!DOCTYPE html>
         <html>
@@ -45,7 +45,7 @@ describe('plugin tests', () => {
     test('should throw an error if the file is not found.', async () => {
         const app = Fastify({ logger: false })
         await app.register(send_file)
-        
+
         app.get('/', (_req, rep) => {
             rep.send_file(create_file_path('boom.html'))
         })
@@ -61,7 +61,7 @@ describe('plugin tests', () => {
     test('should serve the file specified.', async () => {
         const app = Fastify({ logger: false })
         await app.register(send_file)
-        
+
         app.get('/', (_req, rep) => {
             rep.send_file(create_file_path('file.html'))
         })
